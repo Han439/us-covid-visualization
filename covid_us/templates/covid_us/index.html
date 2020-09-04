@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Covid Cases</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <div class="layout">
+      <div id="map" class="map-container chart-container" style="width: 100%; height: 100%"></div>
+      <div class="line-chart-layout">
+        <div id="cases" class="chart-container" style="width: 100%; height: 100%"></div>
+        <div id="fatality" class="chart-container" style="width: 100%; height: 100%"></div>
+      </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>

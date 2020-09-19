@@ -63,8 +63,8 @@ function getOptions(res) {
         opt[i].visualMap = {min: res.mapData[res.dates[i] + 'min'], 
                             max: res.mapData[res.dates[i] + 'max']==res.mapData[res.dates[i] + 'min']?
                             0:res.mapData[res.dates[i] + 'max']}
-        opt[i].title = {subtext: 'Total Cases: ' + numberFormat(res.mapData[res.dates[i] + 'total'])}
-    }
+        opt[i].title = {subtext: 'Total Cases: ' + numberFormat(res.mapData[res.dates[i] + 'total']) + '\n'  + res.dates[i] }
+        }
     return opt
     
 };
@@ -221,7 +221,6 @@ fetch('https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/USA_geo.json')
     		timeline: {
 	            axisType: 'category',
 	            realtime: true,
-	            // loop: false,
 	            autoPlay: false,
 	            currentIndex: res.dates.length - 1,
 	            playInterval: 1000,

@@ -45,9 +45,9 @@ const mainFont = 'monospace';
 
 
 // urls
-let mapUrl = "http://127.0.0.1:8000/api/map/";
-let growUrl = "http://127.0.0.1:8000/api/grow/";
-let fatalityUrl = "http://127.0.0.1:8000/api/death/";
+let mapUrl = "/api/map/";
+let growUrl = "/api/grow/";
+let fatalityUrl = "/api/death/";
 
 // helper function
 

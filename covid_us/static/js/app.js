@@ -63,7 +63,7 @@ function getOptions(res) {
         opt[i].visualMap = {min: res.mapData[res.dates[i] + 'min'], 
                             max: res.mapData[res.dates[i] + 'max']==res.mapData[res.dates[i] + 'min']?
                             0:res.mapData[res.dates[i] + 'max']}
-        opt[i].title = {subtext: 'Total Cases: ' + numberFormat(res.mapData[res.dates[i] + 'total']) + '\n'  + res.dates[i] }
+        opt[i].title = {subtext: 'Total Cases: ' + numberFormat(res.mapData[res.dates[i] + 'total']) + '\n' + '\n' + res.dates[i] }
         }
     return opt
     
